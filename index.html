@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Form CRUD</title>
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
+       so how much the device is able to fit on the screen is what's shown initially. 
+       Remove comments from this tag, when you want to apply media queries to the website. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
+</head>
+
+<body>
+  <!--container start-->
+  <div class="container">
+    <!--main section start-->
+    <main>
+      <form class="form" action="#FIXME" method="post">
+        <div class="wrapper">
+          <div class="first-name">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="first-input" id="firstName">
+          </div>
+          <div class="last-name">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="last-input" id="lastName">
+          </div>
+          <div class="gender">
+            <label for="male">Gender:</label>
+            <div id="genderRadio" class="radio">
+              <div class="gender-input">
+                <input type="radio" class="radio-input" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+              </div>
+              <div class="gender-input">
+                <input type="radio" class="radio-input" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+              </div>
+            </div>
+          </div>
+          <div class="address">
+            <label for="address">Address:</label>
+            <textarea id="address" class="address-input" cols="30" rows="10"></textarea>
+          </div>
+          <div class="terms-condition">
+            <input type="checkbox" id="terms" class="terms-input">
+            <label for="terms">Terms and conditions</label>
+          </div>
+          <div class="btns">
+            <input type="submit" class="submit-btn" value="submit">
+            <input type="reset" class="cancel-btn" value="cancel">
+          </div>
+        </div>
+      </form>
+      <div class="table-container">
+        <div class="wrapper">
+          <ul class="table">
+            <li class="table-row">
+              <ul class="table-col table-head">
+                <li>First Name</li>
+                <li>Last Name</li>
+                <li>Gender</li>
+                <li>Address</li>
+                <li>Edit</li>
+                <li>Delete</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+    <!--main section end-->
+  </div>
+  <!--container end-->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
